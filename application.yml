@@ -1,0 +1,26 @@
+spring:
+  profiles:
+    active: dev  #    注意台账的地址也需要改成正式库的地址   ProductionCostServiceImpl  1804行
+    output:
+      ansi:
+        enabled: always
+  redis:
+    host: localhost
+    port: 6379
+#    password: 123456
+#    database: 0
+
+
+
+  servlet:
+    multipart:
+      max-request-size: 2048MB               # 最大请求大小
+      max-file-size: 2048MB                  # 最大文件大小
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+#文件上传路径
+file:
+  basePath: D:/upload/
+
